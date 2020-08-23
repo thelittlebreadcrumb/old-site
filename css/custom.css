@@ -1,0 +1,133 @@
+@font-face { font-family: BrandonBold; src: url('fonts/HVD Fonts - BrandonText-Bold.otf'); }
+@font-face { font-family: BrandonMedium; src: url('fonts/HVD Fonts - BrandonText-Medium.otf'); }
+
+
+
+
+* {
+	font-family: 'BrandonMedium';
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+html {
+	border: 30px solid black;
+	min-height: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+
+}
+
+.header {
+	margin-top: 91px;
+	font-family: 'BrandonBold';
+	font-weight: normal;
+	font-size: 17.1pt;
+}
+
+.header h5 {
+	margin-top: 1.1em;
+}
+
+ul.navigation { 
+	list-style: none; 
+	font-family: 'BrandonBold';
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+ul.navigation li { 
+	display: inline; 
+}
+
+ul.navigation li a { 
+	text-decoration: none;
+	color: Grey;
+}
+
+
+ul.navigation li a:hover { 
+	color: black;
+	border-bottom: 2px solid black;
+}
+
+ul.navigation li:after { 
+	content: " /"; 
+}
+
+ul.navigation li:last-child:after { 
+	content: ""; 
+}
+
+.intro {
+	margin-top: 151px;
+	font-family: 'BrandonBold';
+	font-size: 1.6em;
+	line-height: 30pt !important;
+	overflow: hidden;
+}
+
+.projects {
+	margin-top: 151px;
+}
+
+.project-thumbs img {
+	margin-bottom: 2em;
+}
+
+.project-blahblah {
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
+
+#bold {
+	font-family: 'BrandonBold';
+}
+
+// Small screens
+@media only screen { body {background-color: yellow;} } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {	
+
+	html {
+		border: 15px solid black;
+	}
+
+	.projects {
+		margin-top: 100px;
+	}
+
+	.intro {
+		margin-top: 100px;
+	}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) {	body {background-color: yellow;} } /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1024px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xlarge screens */
